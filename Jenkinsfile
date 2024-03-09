@@ -1,3 +1,4 @@
+
 pipeline {
     agent any
     stages {
@@ -12,7 +13,7 @@ pipeline {
         stage('Test') {
             steps {
                 script {
-                    sh './output'
+                    sh './non_existent_executable'
                 }
             }
         }
